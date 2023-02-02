@@ -1,0 +1,43 @@
+apiVersion: v1
+entries:
+  sybrin:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-02-02T16:53:31.736645+02:00"
+    dependencies:
+    - condition: ses.enabled
+      name: ses
+      repository: file://../ses
+      version: 0.1.0
+    - alias: redis
+      condition: redis.enabled
+      name: redis
+      repository: file://../redis
+      version: 0.1.0
+    - alias: scredis
+      condition: scredis.enabled
+      name: redis
+      repository: file://../redis
+      version: 0.1.0
+    - alias: activereports15
+      condition: activereports15.enabled
+      name: microservice
+      repository: file://../microservice
+      version: 0.1.0
+    - alias: apilistner
+      condition: apilistner.enabled
+      name: microservice
+      repository: file://../microservice
+      version: 0.1.0
+    - alias: nest
+      condition: nest.enabled
+      name: microservice
+      repository: file://../microservice
+      version: 0.1.0
+    description: A Helm chart for Kubernetes
+    digest: cb5321e7350694cca756fe33cbca3b8f70b9c9733ed7cc305f1820e7d2ef4fc9
+    name: sybrin
+    urls:
+    - https://github.com/anonymousheadless/helm/releases/download/sybrin-0.1.0/sybrin-0.1.0.tgz
+    version: 0.1.0
+generated: "2023-02-02T16:53:31.7409347+02:00"
